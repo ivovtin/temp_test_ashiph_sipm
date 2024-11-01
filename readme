@@ -1,0 +1,11 @@
+root -l
+root [0] .L histo_background.C
+root [1] histo("2024-05-22_13-51-27/",0)
+
+
+root -l
+root [0] .L histo_background.C
+root [1] list<int> numbers{ 0, 2, 4 };
+root [2] for (int n : numbers) histo("2024-05-22_13-51-27",n)
+
+root -l 'histo.C("2024-05-22_13-51-27",0)'
